@@ -6,5 +6,5 @@ files:
 hooks:
   AfterInstall:
     - location: scripts/set_owner
-       timeout: 5
-       runas: root
+      timeout: 5
+      runas: root
