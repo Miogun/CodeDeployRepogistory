@@ -1,0 +1,11 @@
+echo "install node modules"
+npm install
+
+echo "build project"
+npm run build
+
+echo "install build files to web root dir"
+mv ./build/* ./
+
+echo "remove souce code"
+rm -rf build src scripts
