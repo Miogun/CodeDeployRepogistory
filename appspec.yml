@@ -4,9 +4,9 @@ files:
   - source: /
     destination: /var/www/html
 hooks:
-  AfterInstall:
-    - location: scripts/build
+  BeforeInstall:
+    - location: scripts/before_install.sh
       runas: root
-    - location: scripts/set_owner
-      timeout: 5
+  AfterInstall:
+    - location: scripts/after_install.sh
       runas: root
