@@ -5,6 +5,8 @@ files:
     destination: /var/www/html
 hooks:
   AfterInstall:
+    - location: scripts/build
+      runas: root
     - location: scripts/set_owner
       timeout: 5
       runas: root
